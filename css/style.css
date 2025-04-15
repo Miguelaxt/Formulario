@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
+    color: #000000;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -27,21 +27,21 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #34495e;
+    color: #ffee00;
     font-weight: bold;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #bdc3c7;
+    border: 2px solid #ffee00;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: #3498db;
+    border-color: #ffee00;
     outline: none;
 }
 
@@ -56,8 +56,8 @@ input:focus, select:focus, textarea:focus {
 }
 
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: #ffee00;
+    color: rgb(0, 0, 0);
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -78,20 +78,20 @@ button:hover {
 }
 
 .form-section {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    background-color: #000000;
+    border: 1px solid #000000;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 25px;
 }
 
 .form-section h2 {
-    color: #3498db;
+    color: #ffee00;
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #ffee00;
 }
 
 .form-row {
@@ -118,6 +118,6 @@ button:hover {
 .checkbox-group {
     margin: 15px 0;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #000000;
     border-radius: 5px;
 }

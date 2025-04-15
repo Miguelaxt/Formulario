@@ -14,38 +14,30 @@
     </header>
     <main>
         <div class="container">
-            <h1>Ordem de Serviço Mecânico</h1>
+            <h1>Ordem de Venda de Carro</h1>
             <form id="formOrdemServico">
                 <div class="form-section">
-
                     <h2> Dados do Cliente:</h2>
-
                     <div class="form-row">
-
                         <div class="form-group">
                             <label for="nomeCliente">Nome do Cliente:</label>
                             <input type="text" id="nomeCliente" required>
                         </div>
-
                         <div class="form-group">
                             <label for="telefone">Telefone:</label>
                             <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required
                                 pattern="(\([0-9]{2}\)\s([9]{1})?([0-9]{4}))">
                         </div>
-
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" id="email">
                         </div>
-
                         <div class="form-group">
                             <label for="cpf">cpf:</label>
                             <input type="cpf" id="cpf">
                         </div>
-
                     </div>
                 </div>
-
                 <div class="form-section">
                     <h2>Dados do Veículo</h2>
                     <div class="form-row">
@@ -65,7 +57,102 @@
                 </div>
 
                 <div class="form-section">
-                    <h2>Detalhes do Serviço</h2>
+                    <h2>Escolha a cor do veículo</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipoServico">Cores:</label>
+                            <select id="tipoServico" required>
+                                <option value="">Selecione...</option>
+                                <option>Azul</option>
+                                <option>Marrom</option>
+                                <option>Branco</option>
+                                <option>Vermelho</option>
+                                <option>Verde</option>
+                                <option>Amarelo</option>
+                                <option>Roxo</option>
+                                <option>Violeta</option>
+                                <option>Cinza</option>
+                                <option>Preto</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Escolha o interior</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipoServico">Interiores:</label>
+                            <select id="tipoServico" required>
+                                <option value="">Selecione...</option>
+                                <option>Camurça</option>
+                                <option>Couro</option>
+                                <option>Tecido</option>
+                                <option>Fibra de Carbono</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Escolha a cor do interior do veículo</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipoServico">Cores do Interior:</label>
+                            <select id="tipoServico" required>
+                                <option value="">Selecione...</option>
+                                <option>Azul</option>
+                                <option>Marrom</option>
+                                <option>Branco</option>
+                                <option>Vermelho</option>
+                                <option>Verde</option>
+                                <option>Amarelo</option>
+                                <option>Roxo</option>
+                                <option>Violeta</option>
+                                <option>Cinza</option>
+                                <option>Preto</option>
+                                <option>Rosa</option>
+                                <option>Dourado</option>
+                                <option>Salmão</option>
+                                <option>Verde Lima</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Escolha o estilo das rodas</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipoServico">Rodas:</label>
+                            <select id="tipoServico" required>
+                                <option value="">Selecione...</option>
+                                <option>Aro 18</option>
+                                <option>Aro 19</option>
+                                <option>Aro 20</option>
+                                <option>Aro 21</option>
+                                <option>Aro 22</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Escolha o estilo das rodas</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipoServico">Rodas:</label>
+                            <select id="tipoServico" required>
+                                <option value="">Selecione...</option>
+                                <option>Roda esportiva</option>
+                                <option>Roda para corrida</option>
+                                <option>Roda de arrancada</option>
+                                <option>Roda lowrider</option>
+                                <option>Roda rally</option>
+                                <option>Roda de luxo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Detalhes da venda</h2>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="tipoServico">Tipo de Serviço:</label>
@@ -79,12 +166,12 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="dataServico">Data do Serviço:</label>
+                            <label for="dataServico">Data da venda:</label>
                             <input type="date" id="dataServico" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="descricao">Descrição do Problema:</label>
+                        <label for="descricao">Motivo da procura:</label>
                         <textarea id="descricao" rows="4" required></textarea>
                     </div>
                 </div>
