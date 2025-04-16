@@ -15,7 +15,7 @@
     <main>
         <div class="container">
             <h1>Ordem de Venda de Carro</h1>
-            <form id="formOrdemServico">
+            <form id="formOrdemVendaCarro">
                 <div class="form-section">
                     <h2> Dados do Cliente:</h2>
                     <div class="form-row">
@@ -26,7 +26,7 @@
                         <div class="form-group">
                             <label for="telefone">Telefone:</label>
                             <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required
-                                pattern="(\([0-9]{2}\)\s([9]{1})?([0-9]{4}))">
+                            pattern="(\([0-9]{2})\s([9]{1})?([0-9]{4}))">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="form-section">
-                    <h2>Dados da motocicleta:</h2>
+                    <h2>Dados do Carro:</h2>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="veiculoMarca">Marca:</label>
@@ -51,11 +51,10 @@
                         </div>
                         <div class="form-group">
                             <label for="veiculoAno">Ano:</label>
-                            <input type="number" id="veiculoAno" min="1900" max="2024" required>
+                            <input type="number" id="veiculoAno" min="1900" max="2025" required>
                         </div>
                     </div>
                 </div>
-
                 <div class="form-section">
                     <h2>Escolha a cor do veículo</h2>
                     <div class="form-row">
@@ -118,10 +117,10 @@
                     </div>
                 </div>
                 <div class="form-section">
-                    <h2>Escolha o estilo das rodas</h2>
+                    <h2>Escolha o estilo dos aros</h2>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="tipoServico">Rodas:</label>
+                            <label for="tipoServico">Aros:</label>
                             <select id="tipoServico" required>
                                 <option value="">Selecione...</option>
                                 <option>Aro 18</option>
@@ -155,31 +154,30 @@
                     <h2>Detalhes da venda</h2>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="tipoServico">Tipo de Serviço:</label>
+                            <label for="tipoServico">Meios de pagamento:</label>
                             <select id="tipoServico" required>
                                 <option value="">Selecione...</option>
-                                <option>Revisão Preventiva</option>
-                                <option>Troca de Óleo</option>
-                                <option>Alinhamento/Balanceamento</option>
-                                <option>Reparos no Motor</option>
-                                <option>Freios</option>
+                                <option>Troca</option>
+                                <option>Compra parcelada</option>
+                                <option>Compra á vista</option>
+                                <option>Boleto</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="dataServico">Data da venda:</label>
+                            <label for="dataServico">Data da pesquisa:</label>
                             <input type="date" id="dataServico" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="descricao">Motivo da procura:</label>
-                        <textarea id="descricao" rows="4" required></textarea>
+                        <textarea id="descricao" rows="4"></textarea>
                     </div>
                 </div>
 
                 <div class="form-section">
                     <div class="checkbox-group">
                         <input type="checkbox" id="newsletter">
-                        <label for="newsletter">Desejo receber atualizações e promoções por e-mail</label>
+                        <label for="newsletter">Desejo receber notificações sobre novos veículos e promoções por e-mail</label>
                     </div>
                 </div>
 

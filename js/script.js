@@ -32,7 +32,7 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
     if (!cpfRegex.test(cpf.value)) {
         alert('Por favor, insira um CPF em um formato válido');
         valid = false;
-    } */
+    } 
 
     if (veiculoAno.value < 1900 || veiculoAno.value > new Date().getFullYear()) {
         alert('Ano do veículo deve ser entre 1900 e o ano atual');
